@@ -13,13 +13,21 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,
         body: LayoutBuilder(
-          // Use LayoutBuilder to safely get dimensions
           builder: (context, constraints) {
-            final buttonSize =
-                constraints.maxWidth /
-                5; // Calculate button size based on screen width
+            final buttonSize = constraints.maxWidth / 5;
             return Column(
               children: [
+                // Add display area
+                Container(
+                  alignment: Alignment.bottomRight,
+                  padding: const EdgeInsets.all(20),
+                  height: constraints.maxHeight / 3,
+                  child: const Text(
+                    "0",
+                    style: TextStyle(color: Colors.white, fontSize: 80),
+                  ),
+                ),
+                // Rest of your button rows
                 Row(
                   children: [
                     calcbutton("7", Colors.white38, buttonSize),
