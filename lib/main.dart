@@ -25,31 +25,35 @@ class MainApp extends StatelessWidget {
                     calcbutton("7", Colors.white38, buttonSize),
                     calcbutton("8", Colors.white38, buttonSize),
                     calcbutton("9", Colors.white38, buttonSize),
-                    calcbutton("/", Colors.orange, buttonSize),
+                    calcbutton("÷", Colors.orange, buttonSize),
                   ],
                 ),
                 Row(
                   children: [
-                    calcbutton("7", Colors.white38, buttonSize),
-                    calcbutton("8", Colors.white38, buttonSize),
-                    calcbutton("9", Colors.white38, buttonSize),
-                    calcbutton("/", Colors.orange, buttonSize),
+                    calcbutton("4", Colors.white38, buttonSize),
+                    calcbutton("5", Colors.white38, buttonSize),
+                    calcbutton("6", Colors.white38, buttonSize),
+                    calcbutton("×", Colors.orange, buttonSize),
                   ],
                 ),
                 Row(
                   children: [
-                    calcbutton("7", Colors.white38, buttonSize),
-                    calcbutton("8", Colors.white38, buttonSize),
-                    calcbutton("9", Colors.white38, buttonSize),
-                    calcbutton("/", Colors.orange, buttonSize),
+                    calcbutton("1", Colors.white38, buttonSize),
+                    calcbutton("2", Colors.white38, buttonSize),
+                    calcbutton("3", Colors.white38, buttonSize),
+                    calcbutton("-", Colors.orange, buttonSize),
                   ],
                 ),
                 Row(
                   children: [
-                    calcbutton("7", Colors.white38, buttonSize),
-                    calcbutton("8", Colors.white38, buttonSize),
-                    calcbutton("9", Colors.white38, buttonSize),
-                    calcbutton("/", Colors.orange, buttonSize),
+                    calcbutton("0", Colors.white38, buttonSize),
+                    calcbutton(".", Colors.white38, buttonSize),
+                    calcbutton(
+                      "=",
+                      const Color.fromARGB(255, 5, 113, 9),
+                      buttonSize,
+                    ),
+                    calcbutton("+", Colors.orange, buttonSize),
                   ],
                 ),
               ],
@@ -72,7 +76,7 @@ class MainApp extends StatelessWidget {
       alignment: Alignment.center,
       child: Text(
         text,
-        style: const TextStyle(color: Colors.white, fontSize: 30),
+        style: const TextStyle(color: Colors.white, fontSize: 40),
       ),
     );
   }
